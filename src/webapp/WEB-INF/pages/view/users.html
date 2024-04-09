@@ -71,7 +71,7 @@
 </table>
 <hr/>
 <h2>CREATE NEW USER</h2>
-<form th:method="POST" th:action="@{/users/add}" th:object="${newUser}">
+<form th:method="POST" th:action="@{/add}" th:object="${newUser}">
     <div>
         <label for="name">Name:</label>
         <input type="text" th:field="*{name}" id="name"/>
