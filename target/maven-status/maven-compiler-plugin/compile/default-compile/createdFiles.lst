@@ -3,5 +3,7 @@ web\config\AppInit.class
 web\config\WebConfig.class
 web\config\Hibernate.class
 web\controller\UserController.class
+web\dao\UserDao.class
 web\service\UserServiceImpl.class
+web\dao\UserDaoImpl.class
 web\model\User.class

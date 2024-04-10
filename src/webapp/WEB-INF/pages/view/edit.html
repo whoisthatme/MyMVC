@@ -47,10 +47,6 @@
             background-color: #45a049;
         }
 
-        .error {
-            color: red;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
@@ -58,13 +54,10 @@
     <input type="hidden" th:field="*{id}"/>
     <label for="name">Name</label>
     <input type="text" th:field="*{name}" id="name"/>
-    <div class="error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
     <label for="age">Age</label>
     <input type="text" th:field="*{age}" id="age"/>
-    <div class="error" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></div>
     <label for="email">Email</label>
     <input type="text" th:field="*{email}" id="email"/>
-    <div class="error" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
     <input type="submit" value="Update person"/>
 </form>
 </body>
